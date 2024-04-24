@@ -1,7 +1,7 @@
-from flask import Flask, jsonify, session
+from flask import Flask, jsonify, session # type: ignore
 from models import User
 
-app = Flask(__name__)
+app = Flask(__name__) # type: ignore
 
 @app.route("/users", methods = ["GET"])
 def get_users():
